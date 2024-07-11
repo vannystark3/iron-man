@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">  
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" zoom="1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta http-equiv="X-UA-compatible" content="ie=">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+    <div class="slide1" id="slide1">
+        <div class="head">
+            <a href="https://www.marvel.com/">
+                <img src="2.png" id="head" alt="Clickable Image" data-aos="fade-down" data-aos-duration="1500">
+            </a>
+            <a href="#slide1">ABOUT</a>
+            <a href="#slide2">J.A.R.V.I.S.</a>
+            <a href="#slide3">ARMOURS</a>
+            <a href="#slide5">AVENGERS</a>
+            <a href="#slide4">MOVIES</a>
+        </div>
+        <div class="tony" data-aos="fade" data-aos-duration="2000">
+        </div>
+        <div class="desc" data-aos="fade-up" data-aos-duration="2000">
+            <div>
+            <h1>TONY STARK</h1> 
+            - <i>Genuis, Billionaire, Phillanthropist.</i>
+            <p> • Tony Stark, the CEO of Stark Industries, is known worldwide as the legendary Iron Man. 
+            <br>• From his origins as a brilliantvinventor to his transformation into a superhero, Iron Man's journey is a captivating 
+                tale of ingenuity, resilience, and heroism. 
+            <br>• Explore the thrilling adventures of this iconic character as he battles villains, overcomes challenges, and 
+                inspires millions with his unwavering courage and determination. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide2" id="slide2" data-aos="fade-up" data-aos-duration="1500">
+        <div class="jarvis">
+        </div>
+        <div class="jarvis-desc">
+            <h1>J.A.R.V.I.S.</h1> 
+            - <i>Just a Rather Very Intelligent System</i>
+            <p> • J.A.R.V.I.S. is an artificial intelligence created by Tony Stark, who later controls his Iron Man and Hulkbuster armor for him.
+            <br>• In 2015, J.A.R.V.I.S. is seemingly destroyed by Ultron, but he was able to save himself by distributing his "consciousness" throughout the Internet, allowing his security protocols to delay Ultron's attempt to access Earth's nuclear launch codes long enough for Stark to work out what had happened.
+            <br>• Stark and Bruce Banner use J.A.R.V.I.S. as the core software for the android Vision while F.R.I.D.A.Y. takes his place as Stark's assistant. </p>
+        </div>
+        
+    </div>
+    <div class="slide3" id="slide3" data-aos="fade-up" data-aos-duration="1500">
+        <div class="armour">
+        </div>
+        <div class="armour-desc">
+            <h1 id="armour">ARMOURS</h1>
+            Explore numerous armours developed by Tony Stark here.
+            <br>
+            <a href="https://marvelcinematicuniverse.fandom.com/wiki/Category:Iron_Man_Armors" id="explore">Explore now!</a>
+        </div>
+        
+    </div>
+    <div class="slide4" id="slide4" data-aos="fade-up" data-aos-duration="1500">
+        <div class="heading">
+            MOVIES FEATURING IRON MAN!
+        </div>
+        <div class="avengers">
+            <div class="slides fade">
+                <img src="im1.jpg">
+            </div>
+            <div class="slides fade">
+                <img src="im2.jpg">
+            </div>
+            <div class="slides fade">
+                <img src="avg1.jpg">
+            </div>
+            <div class="slides fade">
+                <img src="im3.jpg" >
+            </div>
+            <div class="slides fade">
+                <img src="avg2.jpg" >
+            </div>
+            <div class="slides fade">
+                <img src="ca3.jpg">
+            </div>
+            <div class="slides fade">
+                <img src="avg3.jpg" >
+            </div>
+            <div class="slides fade">
+                <img src="avg4.jpg">
+            </div>
+        </div>
+        <div class="slider">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <script>
+        let i = 0;
+        slideshow();
+
+        function slideshow(){
+            let j;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            for(j=0;j<slides.length;j++){
+                slides[j].style.display = "none";
+            }
+            i++;
+            if(i>slides.length){i=1;}
+            for(j=0;j<dots.length;j++){
+                dots[j].className = dots[j].className.replace(" active","")
+            }
+            slides[i-1].style.display = "block";
+            dots[i-1].className += " active";
+            setTimeout(slideshow,4000);
+        }
+    </script>
+
+    <div class="slide5" data-aos="fade-up" data-aos-duration="1500">
+        
+    </div>
+    <div class="footer" data-aos="fade-up" data-aos-duration="1500">
+        <div class="row1">
+            <div class="labels1" style="padding: 15px;margin-left: 120px;">
+                <a href="https://www.marvel.com/"><b>Marvel Studios</b></a>
+            </div>
+            <div class="labels1" style="padding: 15px;margin-left: 120px;">
+                <a href="https://www.marvel.com/comics"><b>Marvel Comics</b></a>
+            </div>
+            <div class="labels1" style="padding: 15px;margin-left: 120px;">
+                <a href="https://www.hotstar.com/in/movies/iron-man/1660000038"><b>Watch Here!</b></a>
+            </div>
+            <div class="labels1" style="padding: 15px;margin-left: 120px;">
+                <a href="https://marvelcinematicuniverse.fandom.com/wiki/Category:Iron_Man_Armors"><b>Armours</b></a>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="labels1" style="padding: 15px;margin-left: 120px;">
+                <a href="https://www.linkedin.com/in/aditya-khurana-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Creator</a>
+            </div>
+            <div class="labels1" style="padding: 15px;margin-left: 178px;">
+                <a href="https://www.linkedin.com/in/aditya-khurana-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+            </div>
+            <div class="labels1" style="padding: 15px;margin-left: 175px;">
+                <a href="https://www.instagram.com/adityakhurana_04?igsh=MXVjbTk3dHlhMmpsYg==">Instagram</a>
+            </div>
+            <div class="labels1" style="padding: 15px;margin-left: 135px;">
+                <a href="#">Github</a>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="labels1" style="padding: 15px;margin-left: 120px;">
+                <a href="https://www.netlify.com/">Web Host</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>   
+</body>
+</html>
